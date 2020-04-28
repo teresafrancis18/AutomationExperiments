@@ -18,6 +18,8 @@ A sample to demonstarte Selenium test automation of a website using the below:
 
 Test Results will be published as .html in target folder in the below path:
 > target/surefire-reports/emailable-report.html. Sample file is uploaded.
+The report will look like below:
+https://teresafrancis18.github.io/AutomationExperiments/Resources/emailable-report.html
 
 # Test Execution - Option 2 using Eclipse IDE and TestNG
 Pre-requisite:
