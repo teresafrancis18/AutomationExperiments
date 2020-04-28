@@ -1,5 +1,5 @@
 # Context
-A sample to demonstarte Selenium test automation of a website using the below:
+A sample to demonstrate Selenium test automation of a website using the below:
  - Selenium Webdriver
  - TestNG
  - Maven
@@ -44,7 +44,19 @@ Download the required .exe from the below links:
 | Eclispe | [https://www.eclipse.org/downloads/packages/]|
 | Java | [https://www.oracle.com/java/technologies/javase-downloads.html]|
 
-# Approach used for Test:
+# Scenario to be Tested and Approach used for Test:
+Scenario:
+JUST EAT has a website available at http://www.just-eat.co.uk/ that you can use to find takeaway restaurants in a postcode area.
+Feature: Use the website to find restaurants
+•	So that I can order food
+•	As a hungry customer
+•	I want to be able to find restaurants in my area
+ Scenario: Search for restaurants in an area
+•	Given I want food in "AR51 1AA"
+•	When I search for restaurants
+•	Then I should see some restaurants in "AR51 1AA"
+
+Approach:
 Only First 10 entries of the restaurants retireved matching the postal code is retrevied assuming that best matching entries for entered postal code will be displayed at top. This approach helped in reducing the test execution time considerably less when compared of checking all restaurants with postal code AR51 1AA.
 
 
