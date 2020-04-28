@@ -12,9 +12,9 @@ A sample to demonstarte Selenium test automation of a website using the below:
 
 # Test Execution - Option 1 using Command Line
 1. Navigate to the working directory where the project is downloaded.
-> cd <filepath>
+> cd filepath
 2. Enter the maven instruction as shown below
-> mvn clean test -Dwebdriver.chrome.driver=<location of chrome.exe>
+> mvn clean test -Dwebdriver.chrome.driver=location of chrome.exe
 
 Test Results will be published as .html in target folder in the below path:
 > target/surefire-reports/emailable-report.html
@@ -28,7 +28,7 @@ Steps:
 2. Set Run Configurations
 > pom.xml->Run As-> Run Configurations
 3. Enter Goals as the below value:
-> clean test-Dwebdriver.chrome.driver=<chrome drive path>
+> clean test-Dwebdriver.chrome.driver= "chrome drive path"
 4. Run the maven build
 > pom.xml -> Run As-> Maven build
 
