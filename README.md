@@ -1,35 +1,39 @@
-# Automation Assignment 1- To automate search of restaurants with a postal code provided
-The test is intended to automate search of restaurants using a postal code provided and to check if the site is retrieving results with that post code.
+# Context
+A sample to demonstarte Selenium test automation of a website using the below:
+ - Selenium Webdriver
+ - TestNG
+ - Maven
 
-# File Retrieval 
-Download the below files from the Github to loacl machine:
-- src
-- pom.xml
-- testng.xml
+# Setup Instructions
+  Pre-requisites:
+- chrome.exe
+- Java 1.8 or above
+- Maven 3 or above
 
-#Pre-requisites
-- Download chrome.exe for the browser used in the targeted machine.
-- Java should be installed.
-- Maven should be installed.
-- Eclispe should be installed.(For approach 2) 
+# Test Execution - Option 1 using Command Line
+1. Navigate to the working directory where the project is downloaded.
+> cd <filepath>
+2. Enter the maven instruction as shown below
+> mvn clean test -Dwebdriver.chrome.driver=<location of chrome.exe>
 
-# Test Execution - Approach 1
-1. Open Command Prompt
-2. Change directory to the loaction of the artifacts (cd filepath)
-3. Enter the below command
-4. mvn clean test -Dwebdriver.chrome.driver=<location of chrome.exe>
-Test execution results can be viewed in the command prompt.
+Test Results will be published as .html in target folder in the below path:
+> target/surefire-reports/emailable-report.html
 
-# Test Execution - Approach 2
+# Test Execution - Option 2 using Maven Build
+Pre-requisite:
+Eclispe IDE
+
+Steps:
 1. Import the project to Eclipse 
-2. Run pom.xml
-3. Enter Goals=clean test-Dwebdriver.chrome.driver=C:\chromedriver\chromedriver.exe
+2. Set Run Configurations
+> pom.xml->Run As-> Run Configurations
+3. Enter Goals as the below value:
+> clean test-Dwebdriver.chrome.driver=<chrome drive path>
 4. Run the maven build
-Test execution results can be viewed in Console.
+> pom.xml -> Run As-> Maven build
 
-# Reports
-You can also view the reports in the below path
-target/surefire-reports/emailable-report.html
+Test Results will be published as .html in target folder in the below path:
+> target/surefire-reports/emailable-report.html
 
 # Useful Links
 Download the required .exe from the below links:
@@ -39,7 +43,7 @@ Download the required .exe from the below links:
 | Eclispe | [https://www.eclipse.org/downloads/packages/][PlGh] |
 | Java | [https://www.oracle.com/java/technologies/javase-downloads.html][PlGd] |
 
-# Approach used for Test
+# Approach used for Test:
 Only First 10 entries of the restaurants retireved matching the postal code is retrevied assuming that best matching entries for entered postal code will be displayed at top. This approach helped in reducing the test execution time considerably less when compared of checking all restaurants with postal code AR51 1AA.
 
 
