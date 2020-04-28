@@ -26,9 +26,9 @@ Eclipse IDE
 Steps:
 1. Import the project to Eclipse 
 2. Set Run Configurations
-> pom.xml->Run As-> Run Configurations
-3. Enter Goals as the below value:
-> clean test -Dwebdriver.chrome.driver= "chrome drive path"
+> testng.xml->Run As-> Run Configurations
+3. Enter Arguments->VM arguments to the below value
+> -Dwebdriver.chrome.driver= "chrome drive path"
 4. Run the Test
 > testng.xml->Run As->TestNG Suite
 
