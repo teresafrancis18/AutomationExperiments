@@ -22,7 +22,7 @@ public class FoodOrders {
 			WebDriver driver;
 			@BeforeTest
 			@Parameters("URL")
-			public void setup(String url)
+			public void setup(String URL)
 			{
 			driver=new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -60,7 +60,7 @@ public class FoodOrders {
 		   int count=0;
 	       for(int i=0;i<postalcode.size();i++)
 	       {
-	    	   if(postalcode.get(i).equals("AR51 1AA"))
+	    	   if(postalcode.get(i).equals(postcode))
 	    	   {
 	    		   count++;
 	    		   System.out.println(restaurant.get(i));
