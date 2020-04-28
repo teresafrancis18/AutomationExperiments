@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-<parameter name="URL"  value="http://www.just-eat.co.uk"/>
+  <parameter name="postcode"  value="AR51 1AA"/>
+  <parameter name="url"  value="http://www.just-eat.co.uk"/>
     <classes>
       <class name="co.uk.justeats.automationtest.FoodOrders"/>
-      <parameter name="postcode"  value="AR51 1AA"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
