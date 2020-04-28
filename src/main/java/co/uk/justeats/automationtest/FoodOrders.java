@@ -19,9 +19,12 @@ import org.testng.annotations.Test;
 
 
 public class FoodOrders {
+			//driver variable is declared as a global variable
 			WebDriver driver;
+			
+			//Method to conduct the test setup
 			@BeforeTest
-			@Parameters("URL")
+			@Parameters("url")
 			public void setup(String url)
 			{
 			driver=new ChromeDriver();
@@ -29,7 +32,8 @@ public class FoodOrders {
 			driver.manage().window().maximize();
 			driver.get(url);
 			}
-		
+			
+			//Method for executing the test scenario
 			@Test
 			@Parameters("postcode")
 			public void search(String postcode)
@@ -60,7 +64,7 @@ public class FoodOrders {
 		   int count=0;
 	       for(int i=0;i<postalcode.size();i++)
 	       {
-	    	   if(postalcode.get(i).equals("AR51 1AA"))
+	    	   if(postalcode.get(i).equals(postcode))
 	    	   {
 	    		   count++;
 	    		   System.out.println(restaurant.get(i));
@@ -70,7 +74,7 @@ public class FoodOrders {
 	       Assert.assertTrue(count>0,"No restaurants with the entered postal code");
 		}
 			
-			
+			//Method for clsoing the browsers
 			@AfterTest
 			public void closetest()
 			{
