@@ -18,6 +18,8 @@ A sample to demonstarte Selenium test automation of a website using the below:
 
 Test Results will be published as .html in target folder in the below path:
 > target/surefire-reports/emailable-report.html. Sample file is uploaded.
+The report will look like below:
+https://teresafrancis18.github.io/AutomationExperiments/Resources/emailable-report.html
 
 # Test Execution - Option 2 using Eclipse IDE and TestNG
 Pre-requisite:
@@ -26,9 +28,9 @@ Eclipse IDE
 Steps:
 1. Import the project to Eclipse 
 2. Set Run Configurations
-> pom.xml->Run As-> Run Configurations
-3. Enter Goals as the below value:
-> clean test -Dwebdriver.chrome.driver= "chrome drive path"
+> testng.xml->Run As-> Run Configurations
+3. Enter Arguments->VM arguments to the below value
+> -Dwebdriver.chrome.driver= "chrome drive path"
 4. Run the Test
 > testng.xml->Run As->TestNG Suite
 

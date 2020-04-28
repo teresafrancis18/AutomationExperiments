@@ -74,7 +74,7 @@ public class FoodOrders {
 	       Assert.assertTrue(count>0,"No restaurants with the entered postal code");
 		}
 			
-			//Method for clsoing the browsers
+			//Method for closing the browsers
 			@AfterTest
 			public void closetest()
 			{
