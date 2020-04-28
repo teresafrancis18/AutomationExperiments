@@ -39,9 +39,9 @@ Test Results will be published as .html in target folder in the below path:
 Download the required .exe from the below links:
 | Installables | Link |
 | ------ | ------ |
-| ChromeDriver | [https://chromedriver.chromium.org/downloads][PlDb] |
-| Eclispe | [https://www.eclipse.org/downloads/packages/][PlGh] |
-| Java | [https://www.oracle.com/java/technologies/javase-downloads.html][PlGd] |
+| ChromeDriver | [https://chromedriver.chromium.org/downloads]|
+| Eclispe | [https://www.eclipse.org/downloads/packages/]|
+| Java | [https://www.oracle.com/java/technologies/javase-downloads.html]|
 
 # Approach used for Test:
 Only First 10 entries of the restaurants retireved matching the postal code is retrevied assuming that best matching entries for entered postal code will be displayed at top. This approach helped in reducing the test execution time considerably less when compared of checking all restaurants with postal code AR51 1AA.
