@@ -22,7 +22,7 @@ public class FoodOrders {
 			//driver variable is declared as a global variable
 			WebDriver driver;
 			
-			//Method to conduct the test setup
+			//Method to complete the test setup before test
 			@BeforeTest
 			@Parameters("url")
 			public void setup(String url)
