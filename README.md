@@ -10,7 +10,7 @@ A sample to demonstarte Selenium test automation of a website using the below:
 - Java 1.8 or above
 - Maven 3 or above
 
-# Test Execution - Option 1 using Command Line
+# Test Execution - Option 1 using Command Line using Maven
 1. Navigate to the working directory where the project is downloaded.
 > cd filepath
 2. Enter the maven instruction as shown below
@@ -19,9 +19,9 @@ A sample to demonstarte Selenium test automation of a website using the below:
 Test Results will be published as .html in target folder in the below path:
 > target/surefire-reports/emailable-report.html
 
-# Test Execution - Option 2 using Maven Build
+# Test Execution - Option 2 using Eclipse IDE and TestNG
 Pre-requisite:
-Eclispe IDE
+Eclipse IDE
 
 Steps:
 1. Import the project to Eclipse 
@@ -29,8 +29,8 @@ Steps:
 > pom.xml->Run As-> Run Configurations
 3. Enter Goals as the below value:
 > clean test-Dwebdriver.chrome.driver= "chrome drive path"
-4. Run the maven build
-> pom.xml -> Run As-> Maven build
+4. Run the Test
+> testng.xml->Run As->TestNG Suite
 
 Test Results will be published as .html in target folder in the below path:
 > target/surefire-reports/emailable-report.html
