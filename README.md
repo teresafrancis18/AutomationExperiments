@@ -17,7 +17,7 @@ A sample to demonstarte Selenium test automation of a website using the below:
 > mvn clean test -Dwebdriver.chrome.driver=location of chrome.exe
 
 Test Results will be published as .html in target folder in the below path:
-> target/surefire-reports/emailable-report.html
+> target/surefire-reports/emailable-report.html. Sample file is uploaded.
 
 # Test Execution - Option 2 using Eclipse IDE and TestNG
 Pre-requisite:
@@ -28,12 +28,11 @@ Steps:
 2. Set Run Configurations
 > pom.xml->Run As-> Run Configurations
 3. Enter Goals as the below value:
-> clean test-Dwebdriver.chrome.driver= "chrome drive path"
+> clean test -Dwebdriver.chrome.driver= "chrome drive path"
 4. Run the Test
 > testng.xml->Run As->TestNG Suite
 
-Test Results will be published as .html in target folder in the below path:
-> target/surefire-reports/emailable-report.html
+Results can be viewed in TestNG console.
 
 # Useful Links
 Download the required .exe from the below links:
