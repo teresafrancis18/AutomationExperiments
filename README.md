@@ -6,7 +6,7 @@ A sample to demonstrate Selenium test automation of a website using the below:
 
 # Setup Instructions
   Pre-requisites:
-- chrome.exe
+- chromedriver.exe
 - Java 1.8 or above
 - Maven 3 or above
 
